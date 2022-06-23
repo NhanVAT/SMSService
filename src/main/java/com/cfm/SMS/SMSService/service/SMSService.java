@@ -48,6 +48,8 @@ public class SMSService {
             LOGGER.info("SEND OTP TO GETWAY SMS ERROR");
         }
 
+        LOGGER.info("THREAD: {}", Thread.currentThread().getName());
+
         result.setErrorCode("0");
         result.setMessage(Constants.RESPONSE_MESSAGE.SUCCESS_CODE_TOTP_CREATE);
 
